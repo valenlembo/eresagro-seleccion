@@ -1,0 +1,22 @@
+// variables
+$bgcolor: #f2f2f2;
+$font-family: "Inter", sans-serif;
+$secondary-color: #202121;
+// mixins
+@mixin alto-ancho($height, $width){
+    height: $height;
+    width: $width;
+}
+@mixin img-texto ($width, $height, $bg-size) {
+    width: $width;
+    height: $height;
+    background-size: $bg-size;
+}
+// maps
+$estilos-cards:(
+    'alto': 370px,
+    'ancho': 100%,
+    'display': flex,
+    'mb': 30px,
+    'jc': space-evenly,
+)

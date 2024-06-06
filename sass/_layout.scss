@@ -1,0 +1,135 @@
+// CONTAINERS 
+.gridContainer {  
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "navbar navbar"
+        "main main"
+        "pieDePag pieDePag"; 
+}
+.containerProyectos{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    @include alto-ancho(100vh, 100%); 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "navbar navbar"
+        "tituloMayuscula tituloMayuscula"
+        "galeria galeria"
+        "footerProyectos footerProyectos"; 
+}
+// GENERAL 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $bgcolor;
+    font-family: $font-family;
+}
+
+// NAV
+.navbar { 
+    grid-area: navbar; 
+    height: 105px;
+    z-index: 5;
+    .logo{
+        margin-left: 50px;
+        width: 150px;
+        background-size: cover;
+    }
+    .menu{
+        position: fixed;
+        background-color: #f2f2f2c4;
+        @include alto-ancho(105px, 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: rgb(41, 41, 41) 1px solid;
+        .menuItems{
+            list-style: none;
+            display: flex;
+            margin-right: 30px;
+            li{
+                margin: 0 5px;
+                a{
+                    text-decoration: none;
+                    color: gray;
+                    padding: 7px 17px;
+                    font-size: 18px;
+                    &:hover{
+                        background-color: rgba(167, 163, 163, 0.253);
+                        text-decoration: underline;
+                        color: black;
+                        transition: .4s;
+                    }
+                }
+            }
+        }
+    }
+}
+.btnMenu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: none;
+}
+ul.show{
+    top: 95px;
+}
+// FOOTER
+.pieDePag {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    background-color: $secondary-color;
+    color: #fff;
+    font-size: medium;
+    gap: 0px 0px;
+    grid-template-areas:
+        "contactoIconos links"
+        "derechos derechos";
+    grid-area: pieDePag;
+    .contactoIconos { 
+        width: 70%;
+        padding-top: 50px;
+        grid-area: contactoIconos;
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-end;
+        .iconos{
+            padding: 20px 0px;
+            a{
+                color: #fff;
+                margin-right: 20px;
+            }
+        }
+    }
+    .links { 
+        width: 90%;
+        grid-area: links;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: #fff;
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+    .derechos { 
+        grid-area: derechos; 
+        color: #fff;
+        margin-left: 13%;
+        .linea{
+            border-bottom: solid 1px #fff;
+            @include alto-ancho(10px, 85%);
+        }  
+    }    
+}

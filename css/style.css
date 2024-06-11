@@ -186,7 +186,7 @@
   }
   
   .nosotrosYPerfiles {
-    height: 600px;
+    height: 800px;
     background-color: #202121;
   }
   .nosotrosYPerfiles .titulo {
@@ -252,13 +252,35 @@
     border-bottom: 1px solid black;
     text-transform: uppercase;
   }
+  .tituloMayusculaCronograma{
+    grid-area: tituloMayuscula;
+    text-align: center;
+    color: #202121;
+    padding: 50px 0px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-transform: uppercase;
+  }
+
   .tituloMayuscula .animacion {
     animation-name: aparicion;
     animation-timing-function: ease;
     animation-duration: 1s;
     animation-delay: 0s;
   }
+
+  .tituloMayusculaCronograma .animacion {
+    animation-name: aparicion;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 0s;
+  }
   
+  .objetivo{
+    padding: 50px;
+  }
+
   @keyframes aparicion {
     from {
       transform: translateX(-900px);
@@ -558,6 +580,28 @@
     padding: 15px;
     border-radius: 10px;
     line-height: 1.7;
+  }
+
+  .juego{
+    padding: 50px;
+  }
+
+  .juegoimg{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .metricas{
+    padding-top: 50px;
+  }
+  
+  .mapa{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 50%;
+    height: 500px;
   }
   
   @media screen and (min-width: 1600px) {

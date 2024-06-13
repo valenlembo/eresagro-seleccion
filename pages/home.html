@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Historia</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -39,13 +39,58 @@
             </nav>
         </div>
         <!-- main -->
-         <main class="main">
-            <div class="linea-tiempo">
-                <img src="../img/linea de tiempo.jfif" alt="linea de tiempo">
+        <main class="main">
+            <!-- carousel -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/cosechadora.jpeg" class="d-block w-100" alt="cosechadora">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/cosecha2.jpeg" class="d-block w-100" alt="cosecha">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/paisaje.jpeg" class="d-block w-100" alt="paisaje">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="mapa">
-                <img src="../img/Mapa.png" alt="mapa">
-            </div>
+            <section class="textoYFoto2">
+                <div class="textoDer" data-aos="zoom-in">
+                    <h2>Objetivo del área</h2>
+                    <p><b>Inspiramos</b> a los  candidatos a que se animen a buscar el cambio a través de nuestra escucha activa. <br>
+                        <b>Conectamos</b> con las mejores oportunidades para cada uno que les ofrece el sector agroindustrial. <br>
+                        <b>Integramos</b> el talento adecuado con las empresas, acorde a sus necesidades y su cultura. <br> </p>
+                </div>
+                <img class="imgIzq" data-aos="zoom-in" src="../img/vacas-agua2.jpeg" alt="vacas-agua">
+            </section>
+            <!-- Que hacemos -->
+            <section class="textoYFoto">
+                <div class="textoIzq" data-aos="zoom-in">
+                    <h2>Lo hacemos mediante:</h2>
+                    <ul>
+                        <li>Trabajo en red</li>
+                        <li>Comunicación</li>
+                        <li>Creatividad</li>
+                        <li>Perseverancia</li>
+                        <li>Tolerancia a la frustración</li>
+                        <li>Escucha activa</li>
+                        <li>Dinamismo</li>
+                        <li>Constancia</li>
+                        <li>Asertividad </li>
+                    </ul>
+                </div>
+                <img class="imgDer" data-aos="zoom-in" src="../img/vacas.jpeg" alt="vacas">
+            </section>
         </main>
         <!-- footer -->
         <footer class="pieDePag">
@@ -75,14 +120,18 @@
                 <p> &copy Todos los derechos reservados</p>
             </div>
         </footer>
-    </div>    
+    </div>
+    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/c91c0a21e3.js" crossorigin="anonymous"></script>
-    <script src="../javascript/app.js" defer></script>
+    <script src="./javascript/app.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script>
         AOS.init();
     </script>
 </body>
+
 </html>

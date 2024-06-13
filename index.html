@@ -14,8 +14,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Eresagro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cronograma</title>
 </head>
 
 <body>
@@ -24,121 +24,128 @@
         <div class="navbar">
             <nav class="menu">
                 <div>
-                    <a href="index.html"><img class="logo" src="./img/logo.png" alt="logo"/></a>
+                    <a href="index.html"><img class="logo" src="../img/logo.png" alt="logo"/></a>
                 </div>
                 <ul class="menuItems">
-                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="index.html"> Cronograma </a></li>
+                    <li><a href="./pages/home.html"> Home </a></li>
                     <li><a href="./pages/nosotros.html"> Nosotros </a></li>
                     <li><a href="./pages/historia.html"> Historia </a></li>
-                    <li><a href="./pages/juego.html"> Juego </a></li>
-                    <li><a href="./pages/cronograma.html"> Cronograma </a></li>
+                    <li><a href="./pages/juego.html"> Debate </a></li>
                 </ul>
                 <span class="btnMenu">
                     <i class="fa-solid fa-bars"></i>
                 </span>
             </nav>
         </div>
-        <!-- main -->
+        <!-- servicios -->
         <main class="main">
-            <!-- carousel -->
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/cosechadora.jpeg" class="d-block w-100" alt="cosechadora">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/cosecha2.jpeg" class="d-block w-100" alt="cosecha">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/paisaje.jpeg" class="d-block w-100" alt="paisaje">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <div class="tituloMayuscula">
+                <h2 class="animacion">Cronograma</h2>
             </div>
-            <section class="textoYFoto2">
-                <div class="textoDer" data-aos="zoom-in">
-                    <h2>Objetivo del área</h2>
-                    <p>Combinamos experiencia, conocimiento y tecnología para conectar el talento con las empresas. Trabajamos sobre las aptitudes profesionales y personales
-                        para que cada persona pueda encontrar su lugar en el agro.
-                        A través de estudios y una escucha activa analizamos los diferentes perfiles de jóvenes para que puedan encontrar su lugar en el agro y así crecer profesional y personalmente.
-                        </p>
+            <div class="container">
+                <div class="row d-flex justify-content-around">
+                    <article class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card mt-5 shadow p-3 mb-5 bg-body" style="width: 18rem;">
+                            <img src="../img/medialunas.jpg" class="card-img" alt="asesoria">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">09:30 am</h5>
+                                <p class="card-text">Desayuno</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card mt-md-5 shadow p-3 mb-5 bg-body" style="width: 18rem;">
+                            <img src="../img/presentacion.jpg" class="card-img" alt="informes">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">10:00 am</h5>
+                                <p class="card-text">Presentación del área</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card mt-lg-5 shadow p-3 mb-5 bg-body" style="width: 18rem;">
+                            <img src="../img/empanadas.jpg" class="card-img" alt="reformas">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">13:00 pm</h5>
+                                <p class="card-text">Almuerzo</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">  
+                        <div class="card shadow p-3 mb-5 bg-body" style="width: 18rem;">
+                            <img src="../img/capacitacion.jpeg" class="card-img" alt="proyecto">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">14:00 pm</h5>
+                                <p class="card-text">Capacitación de Vito</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card shadow p-3 mb-5 bg-body" style="width: 18rem;">
+                            <img src="../img/cierre.jpg" class="card-img" alt="planos">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">15:30 pm</h5>
+                                <p class="card-text">Cierre de reunión </p>
+                            </div>
+                        </div>  
+                    </article>
                 </div>
-                <img class="imgIzq" data-aos="zoom-in" src="./img/vacas-agua2.jpeg" alt="vacas-agua">
-            </section>
-            <!-- Que hacemos -->
-            <section class="textoYFoto">
-                <div class="textoIzq" data-aos="zoom-in">
-                    <h2>¿Qué hacemos?</h2>
-                    <p>Queremos ser la primera consultora de trabajo en RED con los profesionales locales, 
-                        buscando brindarles una coordinación clave para tener un sólo interlocutor para TODAS 
-                        las búsquedas a nivel país, logrando alto conocimiento de la empresa y puestos publicados
-                        dando metodología y formación, además de una plataforma tecnológica compartida.</p>
-                </div>
-                <img class="imgDer" data-aos="zoom-in" src="./img/vacas.jpeg" alt="vacas">
-            </section>
-            <!-- Como lo hacemos -->
-            <section class="textoYFoto2">
-                <div class="textoDer" data-aos="zoom-in">
-                    <h2>¿Como lo hacemos?</h2>
-                    <ul>
-                        <li>Perfil</li>
-                        <li>Research</li>
-                        <li>Terna</li>
-                        <li>Cierre</li>
-                    </ul>
-                </div>
-                <img class="imgIzq" data-aos="zoom-in" src="./img/vacas2.jpeg" alt="vacas-agua">
-            </section>
-        </main>
+            </div>  
+            <div class="tituloMayusculaCronograma">
+                <h2 class="animacion">Objetivo del encuentro</h2>
+            </div>
+            <div class="objetivo">
+                <ul>
+                    <li>Presentar una visión general del área de Selección y su evolución.</li>
+                    <li>Identificar los puntos fuertes y áreas de mejora.</li>
+                    <li>Obtener retroalimentación y colaboración de los equipos para desarrollar 
+                        soluciones efectivas que mejoren nuestros procesos y resultados.</li>
+                    <li>Irnos con un plan de acción.</li>    
+                </ul>
+            </div>  
+        </main> 
         <!-- footer -->
         <footer class="pieDePag">
-            <div class="contactoIconos">
-                <div class="contacto">
-                    <h2>Contacto</h2>
-                    <p>Número de teléfono: +54 911 58960087</p>
-                    <p>Email:  busquedas@eresagro.com</p>
-                    <p>Dirección: Av. Dorrego 1940, Torre A, 2B</p>
+                <div class="contactoIconos">
+                    <div class="contacto">
+                        <h2>Contacto</h2>
+                        <p>Número de teléfono: +54 911 58960087</p>
+                        <p>Email:  busquedas@eresagro.com</p>
+                        <p>Dirección: Av. Dorrego 1940, Torre A, 2B</p>
+                    </div>
+                    <div class="iconos">
+                        <a href="https://www.instagram.com/eresagro?igsh=MnFyeHZ0YjFhNjNs"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a href="https://wa.me/5491158960087"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+                        <a href="tel:5491158960087" data-content="5491158960087" data-type="phone" title=""><i class="fa-solid fa-phone fa-2xl"></i></a>
+                    </div>
                 </div>
-                <div class="iconos">
-                    <a href="https://www.instagram.com/eresagro?igsh=MnFyeHZ0YjFhNjNs"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                    <a href="https://wa.me/5491158960087"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
-                    <a href="tel:5491158960087" data-content="5491158960087" data-type="phone" title=""><i class="fa-solid fa-phone fa-2xl"></i></a>
+                <div class="links">
+                    <h2>Links</h2>
+                    <a href="index.html"> Cronograma </a>
+                    <a href="./pages/home.html"> Home </a>
+                    <a href="./pages/nosotros.html"> Nosotros </a>
+                    <a href="./pages/historia.html"> Historia </a>
+                    <a href="./pages/juego.html"> Debate </a>
                 </div>
-            </div>
-            <div class="links">
-                <h2>Links</h2>
-                <a href="index.html"> Home </a>
-                <a href="./pages/nosotros.html"> Nosotros </a>
-                <a href="./pages/historia.html"> Historia </a>
-                <a href="./pages/juego.html"> Juego </a>
-                <a href="./pages/cronograma.html"> Cronograma </a>
-            </div>
-            <div class="derechos">
-                <div class="linea"></div>
-                <p> &copy Todos los derechos reservados</p>
-            </div>
+                <div class="derechos">
+                    <div class="linea"></div>
+                    <p> &copy Todos los derechos reservados</p>
+                </div>
         </footer>
     </div>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/c91c0a21e3.js" crossorigin="anonymous"></script>
-    <script src="./javascript/app.js" defer></script>
+    <script src="../javascript/app.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script>
         AOS.init();
     </script>
 </body>
-
 </html>
+
+
+

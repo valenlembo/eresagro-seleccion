@@ -595,13 +595,45 @@
   .metricas{
     padding-top: 50px;
   }
-  
+
+  .linea-tiempo{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .busquedas-abiertas{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 50%;
+    height: 50%;
+  }
+
+  .linea-busquedas{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 75%;
+    height: 50%;
+  }
+
   .mapa{
     display: flex;
     justify-content: center;
     padding: 50px;
     width: 50%;
-    height: 500px;
+    height: 50%;
+  }
+
+  .bbdd{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 50%;
+    height: 50%;
   }
   
   @media screen and (min-width: 1600px) {
